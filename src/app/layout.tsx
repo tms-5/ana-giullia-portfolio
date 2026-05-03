@@ -23,14 +23,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             __html: `
               try {
                 var storedTheme = localStorage.getItem('theme');
-                var theme = storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'dark';
+                var theme = storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'light';
                 var profileMode = location.pathname.indexOf('/tech') >= 0 ? 'tech' : 'odonto';
+                var storedLocale = localStorage.getItem('locale');
+                var locale = storedLocale === 'en' || storedLocale === 'pt' ? storedLocale : profileMode === 'tech' ? 'en' : 'pt';
                 document.documentElement.classList.toggle('dark', theme === 'dark');
                 document.documentElement.classList.toggle('odonto', profileMode === 'odonto');
                 document.documentElement.classList.toggle('tech', profileMode === 'tech');
                 document.documentElement.dataset.profileMode = profileMode;
-                document.documentElement.dataset.locale = 'pt';
-                document.documentElement.lang = 'pt-BR';
+                document.documentElement.dataset.locale = locale;
+                document.documentElement.lang = locale === 'en' ? 'en' : 'pt-BR';
                 document.documentElement.style.colorScheme = theme;
               } catch (_) {}
             `,

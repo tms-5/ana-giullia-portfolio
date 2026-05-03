@@ -16,7 +16,11 @@ const LocaleContext = createContext<LocaleContextValue | null>(null)
 function getLocaleSnapshot(): Locale {
   const storedLocale = window.localStorage.getItem(LOCALE_STORAGE_KEY)
 
-  return storedLocale === 'en' || storedLocale === 'pt' ? storedLocale : 'pt'
+  if (storedLocale === 'en' || storedLocale === 'pt') {
+    return storedLocale
+  }
+
+  return window.location.pathname.includes('/tech') ? 'en' : 'pt'
 }
 
 function getServerLocaleSnapshot(): Locale {

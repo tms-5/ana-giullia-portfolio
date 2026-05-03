@@ -12,6 +12,7 @@ const modes: Array<{ href: `/${ProfileMode}`; label: string; value: ProfileMode 
 
 export function ModeSwitcher({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname()
+  const normalizedPathname = pathname.replace(/\/$/, '')
 
   return (
     <nav
@@ -20,7 +21,7 @@ export function ModeSwitcher({ onNavigate }: { onNavigate?: () => void }) {
     >
       <div className="grid grid-cols-2 gap-1">
         {modes.map((mode) => {
-          const isActive = pathname === mode.href
+          const isActive = normalizedPathname === mode.href
 
           return (
             <Link
@@ -31,7 +32,7 @@ export function ModeSwitcher({ onNavigate }: { onNavigate?: () => void }) {
                 'rounded-full px-5 py-2 text-center text-xs font-semibold transition duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-deep',
                 isActive
                   ? 'bg-mode-accent text-mode-accent-contrast shadow-sm'
-                  : 'text-text-secondary hover:bg-mode-surface hover:text-text-primary dark:text-white/80 dark:hover:bg-white/10 dark:hover:text-white',
+                  : 'border border-mode-ring bg-white/0 text-text-primary hover:bg-mode-accent-soft',
               )}
             >
               {mode.label}

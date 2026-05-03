@@ -24,11 +24,11 @@ const THEME_STORAGE_KEY = 'theme'
 function getThemeSnapshot(): Theme {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY)
 
-  return storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'dark'
+  return storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'light'
 }
 
 function getServerThemeSnapshot(): Theme {
-  return 'dark'
+  return 'light'
 }
 
 function subscribeTheme(callback: () => void) {
