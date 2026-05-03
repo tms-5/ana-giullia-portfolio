@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant odonto (&:where(.odonto, .odonto *));
+@custom-variant tech (&:where(.tech, .tech *));
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-playwrite: "Playwrite NO", cursive;
+  --font-script: "Monsieur La Doulaise", cursive;
+  --color-background: var(--app-background);
+  --color-surface: var(--app-surface);
+  --color-surface-soft: var(--app-surface-soft);
+  --color-beige: var(--app-beige);
+  --color-green-soft: var(--app-green-soft);
+  --color-green-muted: var(--app-green-muted);
+  --color-green-deep: var(--app-green-deep);
+  --color-mode-accent: var(--app-mode-accent);
+  --color-mode-accent-contrast: var(--app-mode-accent-contrast);
+  --color-mode-accent-soft: var(--app-mode-accent-soft);
+  --color-mode-surface: var(--app-mode-surface);
+  --color-mode-page: var(--app-mode-page);
+  --color-mode-ring: var(--app-mode-ring);
+  --color-text-primary: var(--app-text-primary);
+  --color-text-secondary: var(--app-text-secondary);
+  --color-border: var(--app-border);
+}
+
+:root {
+  --app-background: #f7faf8;
+  --app-surface: #ffffff;
+  --app-surface-soft: #eef4f1;
+  --app-beige: #f4efea;
+  --app-green-soft: #a8c3b0;
+  --app-green-muted: #6f8f7b;
+  --app-green-deep: #3f5f4b;
+  --app-mode-accent: #3f5f4b;
+  --app-mode-accent-contrast: #ffffff;
+  --app-mode-accent-soft: #eef4f1;
+  --app-mode-surface: #fbfaf6;
+  --app-mode-page: #f7faf8;
+  --app-mode-ring: #dde7e1;
+  --app-text-primary: #243128;
+  --app-text-secondary: #657267;
+  --app-border: #dde7e1;
+
+  background: var(--app-mode-page);
+  color: var(--app-text-primary);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --app-background: #101611;
+  --app-surface: #151c16;
+  --app-surface-soft: #243126;
+  --app-beige: #1b281f;
+  --app-green-soft: #8fb996;
+  --app-green-muted: #a8cfa9;
+  --app-green-deep: #c9e3c9;
+  --app-mode-accent: #c9e3c9;
+  --app-mode-accent-contrast: #112017;
+  --app-mode-accent-soft: #243126;
+  --app-mode-surface: #151c16;
+  --app-mode-page: #101611;
+  --app-mode-ring: rgba(255, 255, 255, 0.1);
+  --app-text-primary: #f2f5ef;
+  --app-text-secondary: #c6d7c6;
+  --app-border: rgba(255, 255, 255, 0.1);
+}
+
+.odonto {
+  --app-mode-accent: #5f8c51;
+  --app-mode-accent-contrast: #ffffff;
+  --app-mode-accent-soft: #e4eadf;
+  --app-mode-surface: #fbfaf6;
+  --app-mode-page: #f4f1eb;
+  --app-mode-ring: #d6e4d8;
+}
+
+.dark.odonto {
+  --app-mode-accent: #86ad7d;
+  --app-mode-accent-contrast: #112017;
+  --app-mode-accent-soft: #263a2d;
+  --app-mode-surface: #1b281f;
+  --app-mode-page: #142018;
+  --app-mode-ring: #49624f;
+}
+
+.tech {
+  --app-mode-accent: #3f7f52;
+  --app-mode-accent-contrast: #ffffff;
+  --app-mode-accent-soft: #e8f0ec;
+  --app-mode-surface: #f8faf8;
+  --app-mode-page: #f4f1eb;
+  --app-mode-ring: #d7e5dc;
+}
+
+.dark.tech {
+  --app-mode-accent: #9ec79f;
+  --app-mode-accent-contrast: #112017;
+  --app-mode-accent-soft: #243126;
+  --app-mode-surface: #172018;
+  --app-mode-page: #101611;
+  --app-mode-ring: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(168, 195, 176, 0.2), transparent 34rem),
+    linear-gradient(180deg, var(--app-mode-page) 0%, var(--app-mode-accent-soft) 100%);
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(168, 195, 176, 0.12), transparent 34rem),
+    linear-gradient(180deg, var(--app-mode-page) 0%, var(--app-mode-page) 100%);
+  color-scheme: dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.monsieur-la-doulaise-regular {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

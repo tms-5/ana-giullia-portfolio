@@ -1,0 +1,196 @@
+export const odontoCopy = {
+  pt: {
+    heroEyebrow: 'Cirurgiã-dentista',
+    heroTitleStart: 'Cuidado que transforma',
+    heroTitleAccent: 'sorrisos',
+    heroDescription: 'Atendimento humanizado com base científica e foco na saúde bucal e qualidade de vida.',
+    heroCta: 'Agendar consulta',
+    heroLink: 'Saiba mais sobre mim',
+    imageAlt: 'Ana Giullia Calado usando jaleco branco',
+    registrationLabel: 'Registro profissional',
+    registrationValue: 'CRO-PE 20171',
+    aboutEyebrow: 'Sobre mim',
+    aboutDescription:
+      'Sou cirurgiã-dentista com formação sólida e paixão por promover saúde bucal e qualidade de vida. Atuo com ética, empatia e atualização constante para oferecer o melhor cuidado aos meus pacientes.',
+    readMore: 'Ver mais',
+    careValues: [
+      ['Atendimento', 'humanizado'],
+      ['Excelência', 'clínica'],
+      ['Prevenção e', 'educação'],
+      ['Atualização', 'constante'],
+    ],
+    experienceEyebrow: 'Experiência',
+    experiences: [
+      {
+        title: 'Cirurgiã-dentista',
+        meta: 'Autônomo · Recife, Pernambuco',
+        date: 'fev de 2025 - o momento',
+        bullets: [
+          'Implementação de cultura Data-Driven na gestão da clínica, com planilhas avançadas para faturamento, custos e ROI.',
+          'Análise de dados comportamentais e financeiros para identificar abandono de tratamento e aumentar retenção.',
+          'Otimização de fluxo de caixa e estoque com ferramentas analíticas, reduzindo desperdícios.',
+        ],
+      },
+      {
+        title: 'Membro da Comissão de Políticas Públicas',
+        meta: 'Conselho Regional de Odontologia de Pernambuco',
+        date: 'set de 2024 - o momento',
+        bullets: [
+          'Gestão e análise de grandes volumes de dados do ecossistema odontológico de Pernambuco.',
+          'Desenvolvimento de dashboards estratégicos no Excel para apoiar decisões regulatórias e institucionais.',
+          'Limpeza e tratamento de dados em planilhas legadas, garantindo integridade das informações.',
+        ],
+      },
+      {
+        title: 'Cirurgiã-dentista',
+        meta: 'Hospital da Restauração · Estágio',
+        date: 'set de 2024 - dez de 2024',
+        bullets: [
+          'Apoio à equipe multidisciplinar em urgências de traumatologia bucomaxilofacial.',
+          'Realização de suturas, exames físicos e limpeza de ferimentos em adultos e pediátricos.',
+          'Triagem e priorização de pacientes em interface com neurocirurgia e cirurgia geral.',
+        ],
+      },
+      {
+        title: 'Acadêmica em odontologia',
+        meta: 'Hospital Universitário Oswaldo Cruz',
+        date: 'mar de 2020 - dez de 2024',
+        bullets: [
+          'Atendimento odontológico pelo SUS durante práticas clínicas do curso.',
+          'Experiência em diversas especialidades odontológicas e rotina clínica.',
+          'Desenvolvimento de habilidades práticas e humanizadas no cuidado com pacientes.',
+        ],
+      },
+    ],
+    formationEyebrow: 'Formação',
+    degree: 'Odontologia · 2020 - 2024',
+    skillsEyebrow: 'Competências clínicas',
+    skills: ['Periodontia', 'Prevenção', 'Cirurgia Oral', 'Urgências', 'Diagnóstico', 'Plano de tratamento', 'Comunicação', 'Trabalho em equipe'],
+    projectsEyebrow: 'Projetos',
+    projects: [
+      {
+        title: 'Monitoria da Clínica Integrada II',
+        description: 'Auxílio de alunos do curso de Odontologia da Universidade de Pernambuco nas práticas clínicas.',
+        skills: ['Odontologia', 'Resolução de problemas', 'Educação de pacientes'],
+      },
+      {
+        title: 'Programa Doar para Viver - Doação de Corpos',
+        description: 'Programa desenvolvido pela Universidade de Pernambuco para conscientizar a população sobre a doação de corpos para estudo e prática da ciência nas universidades.',
+        skills: ['Planejamento de projetos', 'Educação de pacientes', 'Promoção da saúde'],
+      },
+      {
+        title: 'Projeto Humaniza FOP',
+        description: 'Atuação na conscientização de atendimentos mais humanizados para pacientes e em ações sociais realizadas pela Faculdade de Odontologia de Pernambuco.',
+        skills: ['Odontologia', 'Planejamento de projetos', 'Atendimento humanizado'],
+      },
+    ],
+    coursesEyebrow: 'Cursos e aperfeiçoamentos',
+    courses: [
+      { title: 'Periodontia e Implantodontia inteligente', provider: 'CIOSP, Brasil' },
+      { title: 'Storytelling para marketing digital', provider: 'Santander Open Academy' },
+      { title: 'Superando desafios cromáticos em dentes escurecidos com resinas compostas', provider: 'CIOSP, Brasil' },
+      { title: 'Técnicas de Suturas para Cirurgias Periodontais', provider: 'EPO, Brasil' },
+    ],
+    completed: 'Concluído',
+    ctaTitle: 'Vamos cuidar do seu sorriso?',
+    ctaDescription: 'Agende sua consulta e dê o próximo passo para sua saúde bucal.',
+  },
+  en: {
+    heroEyebrow: 'Dentist',
+    heroTitleStart: 'Care that transforms',
+    heroTitleAccent: 'smiles',
+    heroDescription: 'Humanized care grounded in science, focused on oral health and quality of life.',
+    heroCta: 'Book appointment',
+    heroLink: 'Learn more about me',
+    imageAlt: 'Ana Giullia Calado wearing a white coat',
+    registrationLabel: 'Professional registration',
+    registrationValue: 'CRO-PE 20171',
+    aboutEyebrow: 'About me',
+    aboutDescription:
+      'I am a dentist with solid training and a passion for promoting oral health and quality of life. I work with ethics, empathy, and constant learning to offer patients thoughtful care.',
+    readMore: 'Read more',
+    careValues: [
+      ['Humanized', 'care'],
+      ['Clinical', 'excellence'],
+      ['Prevention and', 'education'],
+      ['Constant', 'learning'],
+    ],
+    experienceEyebrow: 'Experience',
+    experiences: [
+      {
+        title: 'Dentist',
+        meta: 'Self-employed · Recife, Pernambuco',
+        date: 'Feb 2025 - present',
+        bullets: [
+          'Implemented a data-driven culture in clinic management, using advanced spreadsheets for revenue, costs, and ROI.',
+          'Analyzed behavioral and financial data to identify treatment abandonment and improve retention.',
+          'Optimized cash flow and inventory with analytical tools, reducing waste.',
+        ],
+      },
+      {
+        title: 'Public Policy Committee Member',
+        meta: 'Regional Dentistry Council of Pernambuco',
+        date: 'Sep 2024 - present',
+        bullets: [
+          'Managed and analyzed large datasets from the dentistry ecosystem in Pernambuco.',
+          'Built strategic Excel dashboards to support regulatory and institutional decisions.',
+          'Cleaned and transformed legacy spreadsheet data to improve information reliability.',
+        ],
+      },
+      {
+        title: 'Dentist',
+        meta: 'Hospital da Restauração · Internship',
+        date: 'Sep 2024 - Dec 2024',
+        bullets: [
+          'Supported multidisciplinary teams in urgent oral and maxillofacial trauma cases.',
+          'Performed sutures, physical examinations, and wound cleaning for adult and pediatric patients.',
+          'Triaged and prioritized patients in coordination with neurosurgery and general surgery.',
+        ],
+      },
+      {
+        title: 'Dental Student',
+        meta: 'Hospital Universitário Oswaldo Cruz',
+        date: 'Mar 2020 - Dec 2024',
+        bullets: [
+          'Provided dental care through the Brazilian public health system during clinical practice.',
+          'Gained experience across multiple dental specialties and clinical routines.',
+          'Developed practical and humanized patient-care skills.',
+        ],
+      },
+    ],
+    formationEyebrow: 'Education',
+    degree: 'Dentistry · 2020 - 2024',
+    skillsEyebrow: 'Clinical skills',
+    skills: ['Periodontics', 'Prevention', 'Oral Surgery', 'Urgent Care', 'Diagnosis', 'Treatment planning', 'Communication', 'Teamwork'],
+    projectsEyebrow: 'Projects',
+    projects: [
+      {
+        title: 'Integrated Clinic II Teaching Assistant',
+        description: 'Supported Dentistry students at Universidade de Pernambuco during clinical practice.',
+        skills: ['Dentistry', 'Problem solving', 'Patient education'],
+      },
+      {
+        title: 'Doar para Viver - Body Donation Program',
+        description: 'University program created to raise awareness about body donation for scientific study and practice.',
+        skills: ['Project planning', 'Patient education', 'Health promotion'],
+      },
+      {
+        title: 'Projeto Humaniza FOP',
+        description: 'Worked on awareness for more humanized dental care and social actions through Faculdade de Odontologia de Pernambuco.',
+        skills: ['Dentistry', 'Project planning', 'Humanized care'],
+      },
+    ],
+    coursesEyebrow: 'Courses and training',
+    courses: [
+      { title: 'Intelligent Periodontics and Implant Dentistry', provider: 'CIOSP, Brazil' },
+      { title: 'Storytelling for digital marketing', provider: 'Santander Open Academy' },
+      { title: 'Overcoming chromatic challenges in darkened teeth with composite resins', provider: 'CIOSP, Brazil' },
+      { title: 'Suture Techniques for Periodontal Surgeries', provider: 'EPO, Brazil' },
+    ],
+    completed: 'Completed',
+    ctaTitle: 'Shall we take care of your smile?',
+    ctaDescription: 'Book your appointment and take the next step for your oral health.',
+  },
+} as const
+
+export type OdontoCopy = (typeof odontoCopy)[keyof typeof odontoCopy]
