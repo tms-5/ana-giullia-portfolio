@@ -7,6 +7,7 @@ import { ArrowRightIcon } from '@/components/commons/icons/ArrowRightIcon'
 import { Button } from '@/components/commons/ui/Button'
 import { Eyebrow } from '@/components/commons/ui/Design'
 import type { TechCopy } from '@/content/tech'
+import { publicPath } from '@/lib/paths'
 import { MiniVisual } from './MiniVisual'
 
 export function TechHero({ content, copy }: { content: ProfileContent; copy: TechCopy }) {
@@ -29,7 +30,7 @@ export function TechHero({ content, copy }: { content: ProfileContent; copy: Tec
           </motion.div>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }} className="relative flex min-h-[430px] items-end justify-center lg:justify-end">
-          <img src={content.hero.image} alt={copy.imageAlt} className="relative z-10 max-h-[555px] w-full max-w-[500px] object-contain object-bottom" />
+          <img src={publicPath(content.hero.image)} alt={copy.imageAlt} className="relative z-10 max-h-[555px] w-full max-w-[500px] object-contain object-bottom" />
         </motion.div>
       </div>
     </section>
