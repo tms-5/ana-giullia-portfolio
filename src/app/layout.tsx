@@ -24,7 +24,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               try {
                 var storedTheme = localStorage.getItem('theme');
                 var theme = storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'dark';
-                var profileMode = location.pathname.indexOf('/tech') === 0 ? 'tech' : 'odonto';
+                var profileMode = location.pathname.indexOf('/tech') >= 0 ? 'tech' : 'odonto';
                 document.documentElement.classList.toggle('dark', theme === 'dark');
                 document.documentElement.classList.toggle('odonto', profileMode === 'odonto');
                 document.documentElement.classList.toggle('tech', profileMode === 'tech');
