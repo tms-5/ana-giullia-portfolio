@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
+import { publicPath } from '@/lib/paths'
 
 const faviconByMode = {
   odonto: {
@@ -30,7 +31,7 @@ export function AdaptiveFavicon() {
       }
 
       link.type = 'image/x-icon'
-      link.href = faviconByMode[mode][theme]
+      link.href = publicPath(faviconByMode[mode][theme])
     }
 
     updateFavicon()

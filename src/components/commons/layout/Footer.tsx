@@ -7,13 +7,14 @@ import { MailIcon } from '@/components/commons/icons/MailIcon'
 import { Container } from '@/components/commons/ui/Container'
 import { profileContactLinks } from '@/lib/contact'
 import { useLocale } from '@/lib/i18n'
+import { publicPath } from '@/lib/paths'
 
 export function Footer() {
   const pathname = usePathname()
   const { locale } = useLocale()
-  const isTech = pathname.startsWith('/tech')
-  const logoSrc = isTech ? '/images/giu-logo-tech.png' : '/images/giu-logo-odonto.png'
-  const logoDarkSrc = isTech ? '/images/giu-logo-tech-horizontal-branca.png' : '/images/giu-logo-odonto-horizontal-branca.png'
+  const isTech = pathname.includes('/tech')
+  const logoSrc = publicPath(isTech ? '/images/giu-logo-tech.png' : '/images/giu-logo-odonto.png')
+  const logoDarkSrc = publicPath(isTech ? '/images/giu-logo-tech-horizontal-branca.png' : '/images/giu-logo-odonto-horizontal-branca.png')
   const credit = locale === 'pt' ? 'Site por Thamires Morais S.' : 'Website by Thamires Morais S.'
   const rights = locale === 'pt' ? 'Todos os direitos reservados.' : 'All rights reserved.'
 

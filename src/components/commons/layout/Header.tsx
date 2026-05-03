@@ -7,6 +7,7 @@ import { ModeSwitcher } from './ModeSwitcher'
 import { Container } from '@/components/commons/ui/Container'
 import { cn } from '@/lib/utils'
 import { useLocale } from '@/lib/i18n'
+import { publicPath } from '@/lib/paths'
 
 const navLinks = [
   { href: '#about', label: { pt: 'Sobre mim', en: 'About' } },
@@ -47,15 +48,15 @@ export function Header() {
   const [activeSection, setActiveSection] = useState(navLinks[0].href)
   const { locale, toggleLocale } = useLocale()
   const theme = useSyncExternalStore(subscribeTheme, getThemeSnapshot, getServerThemeSnapshot)
-  const isTech = pathname.startsWith('/tech')
+  const isTech = pathname.includes('/tech')
   const profileMode: ProfileMode = isTech ? 'tech' : 'odonto'
   const logoSrc = isTech
     ? theme === 'dark'
-      ? '/images/giu-logo-tech-horizontal-branca.png'
-      : '/images/giu-logo-tech-horizontal.png'
+      ? publicPath('/images/giu-logo-tech-horizontal-branca.png')
+      : publicPath('/images/giu-logo-tech-horizontal.png')
     : theme === 'dark'
-      ? '/images/giu-logo-odonto-horizontal-branca.png'
-      : '/images/giu-logo-odonto-horizontal.png'
+      ? publicPath('/images/giu-logo-odonto-horizontal-branca.png')
+      : publicPath('/images/giu-logo-odonto-horizontal.png')
 
   useEffect(() => {
     const getCurrentSection = () => {

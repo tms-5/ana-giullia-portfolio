@@ -1,5 +1,6 @@
-import { redirect } from 'next/navigation'
+import { profileContent } from '@/data/profile'
+import { OdontoPageTemplate } from '@/components/odonto/OdontoPageTemplate'
 
 export default function Home() {
-  redirect('/odonto')
+  return <OdontoPageTemplate content={profileContent.odonto} />
 }

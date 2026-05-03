@@ -8,6 +8,7 @@ import { Button } from '@/components/commons/ui/Button'
 import { Eyebrow } from '@/components/commons/ui/Design'
 import type { OdontoCopy } from '@/content/odonto'
 import { profileContactLinks } from '@/lib/contact'
+import { publicPath } from '@/lib/paths'
 import { BotanicalLine } from '../icons/BotanicalLine'
 
 export function OdontoHero({ content, copy }: { content: ProfileContent; copy: OdontoCopy }) {
@@ -33,7 +34,7 @@ export function OdontoHero({ content, copy }: { content: ProfileContent; copy: O
             <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-mode-accent">{copy.registrationLabel}</p>
             <p className="mt-2 text-sm font-semibold text-text-primary">{copy.registrationValue}</p>
           </div>
-          <img src={content.hero.image} alt={copy.imageAlt} className="relative z-10 max-h-[560px] w-full max-w-[520px] object-contain object-bottom" />
+          <img src={publicPath(content.hero.image)} alt={copy.imageAlt} className="relative z-10 max-h-[560px] w-full max-w-[520px] object-contain object-bottom" />
         </motion.div>
       </div>
     </section>
